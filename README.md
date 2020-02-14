@@ -18,7 +18,7 @@ Bài tập thực hành về CakePHP - Quản lý shop bán hàng - CongDV - 202
 ### Thay đổi thông tin cá nhân
 	Chỉ được thay đổi thông tin của cá nhân
 ### Danh sách user
-	Chỉ admin có chức năng này
+	Chỉ có thủ thư và admin có chức năng này
 ### Sửa thông tin cá nhân
 	Admin có quyền đóng user, thay đổi thông tin số điện thoại, mật khẩu, địa chỉ của user thông thường, không được quyền thay đổi role của user
 	Admin có thể thay đổi thông tin số điện thoại, mật khẩu, địa chỉ, role của tất cả các user, có quyền đóng user
@@ -35,17 +35,17 @@ Bài tập thực hành về CakePHP - Quản lý shop bán hàng - CongDV - 202
 	Trường hợp thể loại sách đang có sách thì không được xóa
 
 ### Danh sách sản phẩm
-	Tất cả mọi user đều có quyền
+	Chỉ Admin và nhân viên báng hàng mới có quyền
 ### Thêm sản phẩm, sửa sản phẩm, xóa sản phẩm
 	Admin có quyền thực hiện
 ### Xem nội dung sản phẩm
-	Tất cả mọi user đều có quyền
+	Chỉ Admin và nhân viên báng hàng mới có quyền
 
 
 ### Danh sách order
-	Tất cả mọi user đều có quyền
+	Chỉ Admin và nhân viên báng hàng mới có quyền
 ### Xem nội dung order
-	Tất cả mọi user đều có quyền
+	Chỉ Admin và nhân viên báng hàng mới có quyền
 
 ### Order sản phẩm
 	Tất cả mọi người dùng đều có quyền mua sản phẩm (không cần login vào hệ thống cũng có thể mua hàng, sau khi hoàn thành đơn hàng thì lấy thông tin của khách hàng để tạo user mới), tuy nhiên cần kiểm tra sản phẩm có còn hay không?
