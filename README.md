@@ -1,4 +1,4 @@
-# practice_php_cakephp_giangdv_201904
+# practice_php_cakephp_congdv_202002
 Bài tập thực hành về CakePHP - Quản lý thư viện - CongDV - 202002
 
 ## Môi trường phát triển
