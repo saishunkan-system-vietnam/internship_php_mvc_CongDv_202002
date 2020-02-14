@@ -1,5 +1,5 @@
 # practice_php_cakephp_congdv_202002
-Bài tập thực hành về CakePHP - Quản lý thư viện - CongDV - 202002
+Bài tập thực hành về CakePHP - Quản lý shop bán hàng - CongDV - 202002
 
 ## Môi trường phát triển
 - PHP 7.3
@@ -20,43 +20,41 @@ Bài tập thực hành về CakePHP - Quản lý thư viện - CongDV - 202002
 ### Danh sách user
 	Chỉ có thủ thư và admin có chức năng này
 ### Sửa thông tin cá nhân
-	Thủ thư có quyền đóng user, thay đổi thông tin số điện thoại, mật khẩu, địa chỉ của user thông thường, không được quyền thay đổi role của user
+	Admin có quyền đóng user, thay đổi thông tin số điện thoại, mật khẩu, địa chỉ của user thông thường, không được quyền thay đổi role của user
 	Admin có thể thay đổi thông tin số điện thoại, mật khẩu, địa chỉ, role của tất cả các user, có quyền đóng user
 
 
-### Danh sách thể loại sách
-	Chỉ thủ thư và admin có quyền thực hiện
-### Thêm thể loại sách
-	Chỉ thủ thư và admin có quyền thực hiện
-### Sửa thể loại sách
-	Chỉ thủ thư và admin có quyền thực hiện
-### Xóa thể loại sách
-	Chỉ thủ thư và admin có quyền thực hiện
+### Danh mục sản phẩm
+	Admin có quyền thực hiện
+### Thêm danh mục sản phẩm
+	Admin có quyền thực hiện
+### Sửa danh mục sản phẩm
+	Admin có quyền thực hiện
+### Xóa danh mục sản phẩm
+	Admin có quyền thực hiện
 	Trường hợp thể loại sách đang có sách thì không được xóa
 
-### Danh sách sách
+### Danh sách sản phẩm
 	Tất cả mọi user đều có quyền
-### Thêm sách, sửa sách
-	Chỉ thủ thư và admin có quyền thực hiện
-### Xem nội dung sách
+### Thêm sản phẩm, sửa sản phẩm, xóa sản phẩm
+	Admin có quyền thực hiện
+### Xem nội dung sản phẩm
 	Tất cả mọi user đều có quyền
 
 
-### Danh sách mượn sách
-	Với user thông thường và admin chỉ hiển thị danh sách của chính mình, với thủ thư hiển thị tất cả
+### Danh sách order
+	Tất cả mọi user đều có quyền
+### Xem nội dung order
+	Tất cả mọi user đều có quyền
 
-### Mượn sách
-	Tất cả mọi user đều có quyền mượn sách, tuy nhiên cần kiểm tra sách có còn trong thư viện hay không?
-	Với mỗi một user thông thường chỉ được mượn 5 quyển, thủ thư 10 quyển, admin 15 quyển
-	Không được mượn 1 quyển sách quá 30 ngày với tất cả user
-	Trường hợp là user thủ thư mượn sách, trạng thái chuyển là đã duyệt và tăng thêm 1 số sách đã mượn , admin và user thông thường là pending và không tăng số sách đã mượn
-### Duyệt mượn sách
-	Chỉ thủ thư có quyền duyệt sách, có thể thực hiện duyệt hoặc từ chối cho mượn sách, trường hợp duyệt, thì tăng thêm 1 số sách đã mượn.
-	Trước khi duyệt, cần kiểm tra số lượng sách trong dữ liệu sách còn hay không?
-### Trả sách
-	Chỉ thủ thư có quyền thao tác, khi trả sách cập nhật trạng thái và giảm đi 1 số sách đã mượn
-### Mất sách
-	Chỉ thủ thư có quyền thao tác, khi báo mất sách cập nhật trạng thái và giảm đi 1 số sách đã mượn, giảm đi 1 số lượng sách
+### Order sản phẩm
+	Tất cả mọi người dùng đều có quyền mua sản phẩm, tuy nhiên cần kiểm tra sản phẩm có còn hay không?
+	Sản phẩm được chọn mua sẽ nằm trong giỏ hàng để người dùng có thể xác nhận lại thông tin sản phẩm muốn mua.
+	Người dùng cần nhập thông tin cá nhân như: Họ, tên, sđt, địa chỉ giao hàng, email... trước khi hoàn thành đơn hàng
+	Khi đơn hàng được đặt hàng thành công thì hệ thống gửi mail tới địa chỉ email của người dùng và email của admin
+### Duyệt đơn hàng
+	Khi có đơn hàng mới thì cần được nhân viên bán hàng xác nhận trước khi hàng được giao
+	Chỉ nhân viên bán hàng có quyền duyệt đơn hàng, có thể thực hiện duyệt hoặc từ chối đơn hàng, trường hợp duyệt, thì số lượng của sản phẩm phải trừ đi bằng số lượng được mua trong order.
 
 ## Tham khảo
 	Book: https://book.cakephp.org/
