@@ -48,7 +48,7 @@ Bài tập thực hành về CakePHP - Quản lý shop bán hàng - CongDV - 202
 	Tất cả mọi user đều có quyền
 
 ### Order sản phẩm
-	Tất cả mọi người dùng đều có quyền mua sản phẩm, tuy nhiên cần kiểm tra sản phẩm có còn hay không?
+	Tất cả mọi người dùng đều có quyền mua sản phẩm (không cần login vào hệ thống cũng có thể mua hàng, sau khi hoàn thành đơn hàng thì lấy thông tin của khách hàng để tạo user mới), tuy nhiên cần kiểm tra sản phẩm có còn hay không?
 	Sản phẩm được chọn mua sẽ nằm trong giỏ hàng để người dùng có thể xác nhận lại thông tin sản phẩm muốn mua.
 	Người dùng cần nhập thông tin cá nhân như: Họ, tên, sđt, địa chỉ giao hàng, email... trước khi hoàn thành đơn hàng
 	Khi đơn hàng được đặt hàng thành công thì hệ thống gửi mail tới địa chỉ email của người dùng và email của admin
